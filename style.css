@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: sans-serif;    
+  background-color: rgb(27, 27, 31);
+  margin: 20px 40px;
+}
+.sidebar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #222;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+.sidebar a{
+    padding:  10px 10px 10px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    display: block;
+}
+.sidebar a:hover{
+    color: white;
+}
+.sidebar .cbtn{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+}
+.mainbox{
+    font-size: 24px;
+    cursor: pointer;
+}
+.head{
+    padding: 20px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.div{
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: aqua;
+} */
+/* .container{
+    width: 300px;
+    height: 600px;
+} */
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login input{
+    display: block;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+
+}
+.container .login h2{
+    text-align: center;
+    color: orangered;
+}
+.login button{
+    padding: 10px 20px;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(189, 48, 114);
+    color: white;
+     margin-left: 82px;
+     text-align: center;
+}
+.login ul{
+    margin-top: 20px;
+    padding: 0 65px;
+    margin-left: 15px;
+    color: aliceblue;
+}
+.login ul i{
+    margin: 2px;
+}
+@media only screen and (max-width:850px){
+    .head{
+        display: block;
+        text-align: center;
+    }
+    .login ul{
+       
+    }
+}
+
+
+

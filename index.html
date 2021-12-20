@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aaf8ecb56b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body> <div class="logo">
+
+</div>
+      <div class="head">
+        <div class="mainbox" onclick="openfunction()">&#9776;open
+        </div>
+        <div class="logo">Mobile Repearing</div>
+      </div>
+    <div class="sidebar" id="menu">
+        <a href=""Home></a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Services</a>
+        <a href="" class="cbtn" onclick="closefunction()">&times;</a>
+    </div>
+   <div class="container">
+       <div class="login">
+           <h2>LOGIN PAGE</h2>
+           <input type="text" placeholder="Entre your name"> 
+           <input type="email" placeholder="Entre your email id">
+           <input type="password" placeholder="Entre your password">
+           <button>LOGIN</button>
+           <ul>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin"></i>
+           </ul>
+       </div>
+   </div>
+       
+    <script>
+   function openfunction(){
+       document.getElementById("menu").style.width="300px"
+       document.getElementById("menu").style.transition="0.4s"
+       document.getElementById("mainbox").style.backgroundColor="rgb(145, 145, 214);";
+   }
+   function closefunction(){
+       document.getElementById("menu").style.width="0px"
+       document.getElementById("menu").style.transition="0.4s"
+   }
+    </script>
+</body>
+</html>
